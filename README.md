@@ -19,14 +19,14 @@
 ## Configuration Files
 1. `variables.tf`: Defines variables like AWS region and cluster name.
    - Default region: `us-east-1`.
-   - Default cluster name: `quizapp-eks`.
+   - Default cluster name: `yourname-eks`.
 2. `main.tf`: Configures the Kubernetes and AWS providers.
    - Sets up the connection to the EKS cluster.
 3. `vpc.tf`: Sets up the VPC for the EKS cluster.
    - CIDR block: `10.20.0.0/16`.
    - Configures both private and public subnets.
 4. `eks-cluster.tf`: Configures the EKS cluster.
-   - Cluster version: `1.29`.
+   - Cluster version: `Latest`.
    - Node groups: master and worker with specified instance types and sizes.
 5. `outputs.tf`: Outputs the cluster name, endpoint, region, and security group ID.
 
@@ -117,10 +117,7 @@ sudo rm -rf /usr/local/aws-cli
 # **Configure AWS Credentials in command line**
 ```
 $ aws configure
-AWS Access Key ID [None]: <YOUR_ACCESS_KEY_ID>
-AWS Secret Access Key [None]: <YOUR_AWS_SECRET_ACCESS_KEY>
-Default region name [None]: us-west-2
-Default output format [None]: json
+
 
 # Verify if we are able list S3 buckets
 aws s3 ls
