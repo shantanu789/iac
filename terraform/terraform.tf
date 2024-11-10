@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "shan-bucket-wsl"
+    bucket = "mybktf"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
