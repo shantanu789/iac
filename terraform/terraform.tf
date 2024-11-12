@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "app-bucket"
+    bucket = "shan-app-bucket"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
