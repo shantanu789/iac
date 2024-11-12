@@ -1,4 +1,4 @@
-![Terraform Version](https://img.shields.io/badge/Terraform-1.9.x-blue.svg)
+![Terraform Version](https://img.shields.io/badge/Terraform-1.9.8-blue.svg)
 # Terraform Configuration for AWS EKS Cluster
 
 ## Overview
