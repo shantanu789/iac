@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "mybktf"
+    bucket = "app-bucket"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }

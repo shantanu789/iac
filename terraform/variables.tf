@@ -50,7 +50,7 @@ variable "ami_id" {
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.medium"
+  default     = "t2.large"
 }
 
 variable "key_name" {
@@ -64,4 +64,9 @@ variable "instance_name" {
   type        = string
   default     = "Jumphost-server"
 }
-#
+
+variable "s3_bucket_name" {
+  description = "Name of S3 bucket"
+  type = string
+  default = "app_bucket"
+}
